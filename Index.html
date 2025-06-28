@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>FixFlow.lk - Your Trusted Home Services Platform</title>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+            <style>
+                body {
+                    font-family: sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    
+                   
+                }
+
+                .navbar {
+                    background-color: rgba(255, 255, 255, 0.9);
+                    padding: 1rem 2rem;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                }
+
+                .navbar-brand {
+                    color: #ffc107;
+                    font-weight: 900;
+                    font-size: 2rem;
+                }
+
+                .navbar-nav .nav-link {
+                    color: #555;
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    margin-left: 1rem;
+                    transition: color 0.3s ease;
+                }
+
+                .navbar-nav .nav-link:hover {
+                    color: #ffc107;
+                }
+
+                .btn-primary {
+                    background-color: #ffc107;
+                    color: #fff;
+                    border: none;
+                    padding: 0.75rem 1.5rem;
+                    border-radius: 0.5rem;
+                    font-weight: 600;
+                    transition: background-color 0.3s ease;
+                }
+
+                .btn-primary:hover {
+                    background-color: #e0a800;
+                }
+
+                .hero-section {
+                    background: linear-gradient(to right, #444, #222);
+                    color: white;
+                    padding: 5rem 2rem;
+                    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+                    margin-bottom: 2rem;
+                }
+
+                .hero-content h1 {
+                    font-size: 3.5rem;
+                    font-weight: 700;
+                    margin-bottom: 1.5rem;
+                }
+
+                .hero-content p {
+                    font-size: 1.2rem;
+                    line-height: 1.7;
+                    margin-bottom: 2rem;
+                }
+
+                .hero-image {
+                    border-radius: 0.5rem;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                }
+
+                .why-choose-us {
+                    padding: 3rem 2rem;
+                    text-align: center;
+                    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background */
+                    border-radius: 1rem;
+                    margin-bottom: 2rem;
+                }
+
+                .why-choose-us h2 {
+                    font-size: 2.5rem;
+                    font-weight: 700;
+                    color: #333;
+                    margin-bottom: 2rem;
+                }
+
+                .feature-item {
+                    padding: 1.5rem;
+                    margin-bottom: 1.5rem;
+                    border-radius: 0.5rem;
+                    background-color: #fff;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                    transition: transform 0.3s ease;
+                }
+
+                .feature-item:hover {
+                    transform: translateY(-5px);
+                }
+
+                .feature-item h3 {
+                    font-size: 1.5rem;
+                    color: #ffc107;
+                    margin-bottom: 0.5rem;
+                }
+
+                .feature-item p {
+                    color: #666;
+                }
+
+                /* New Section */
+                .our-commitment {
+                    padding: 2rem;
+                    text-align: center;
+                    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent */
+                    border-radius: 1rem;
+                    margin-bottom: 2rem;
+                }
+
+                .our-commitment p {
+                     font-size: 1.2rem;
+                    color: #444;
+                    line-height: 1.8;
+                }
+
+                .how-it-works-section {
+                    padding: 3rem 2rem;
+                    text-align: center;
+                    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background */
+                    border-radius: 1rem;
+                    margin-bottom: 2rem;
+                }
+
+                .how-it-works-section h2 {
+                    font-size: 2.5rem;
+                    font-weight: 700;
+                    color: #333;
+                    margin-bottom: 2rem;
+                }
+
+                .how-it-works-steps {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    gap: 2rem;
+                }
+
+                .how-it-works-step {
+                    flex: 1 1 300px;
+                    text-align: center;
+                    background-color: #fff;
+                    padding: 1.5rem;
+                    border-radius: 0.5rem;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    transition: transform 0.3s ease;
+                }
+
+                .how-it-works-step:hover {
+                    transform: translateY(-5px);
+                }
+
+                .how-it-works-step i {
+                    font-size: 3rem;
+                    color: #ffc107;
+                    margin-bottom: 1rem;
+                }
+
+                .how-it-works-step h3 {
+                    font-size: 1.5rem;
+                    color: #333;
+                    margin-bottom: 0.5rem;
+                }
+
+                .how-it-works-step p {
+                    color: #666;
+                }
+
+                .services-section {
+                     padding: 3rem 2rem;
+                    text-align: center;
+                    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background */
+                    border-radius: 1rem;
+                    margin-bottom: 2rem;
+                }
+
+                .services-section h2 {
+                    font-size: 2.5rem;
+                    font-weight: 700;
+                    color: #333;
+                    margin-bottom: 2rem;
+                }
+
+                .services-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                    gap: 2rem;
+                }
+
+                .service-card {
+                    background-color: #fff;
+                    padding: 1.5rem;
+                    border-radius: 0.5rem;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    transition: transform 0.3s ease;
+                }
+
+                .service-card:hover {
+                    transform: translateY(-5px);
+                }
+
+                .service-card i {
+                    font-size: 2rem;
+                    color: #ffc107;
+                    margin-bottom: 1rem;
+                }
+
+                .service-card h3 {
+                    font-size: 1.5rem;
+                    color: #333;
+                    margin-bottom: 0.5rem;
+                }
+
+                .service-card p {
+                    color: #666;
+                }
+
+                .contact-us {
+                    padding: 3rem 2rem;
+                    text-align: center;
+                    background-color: rgba(233, 236, 239, 0.8); /* Semi-transparent */
+                    border-radius: 1rem;
+                    margin-bottom: 2rem;
+                }
+
+                .contact-us h2 {
+                    font-size: 2.5rem;
+                    font-weight: 700;
+                    color: #333;
+                    margin-bottom: 2rem;
+                }
+
+                .contact-us p {
+                    font-size: 1.1rem;
+                    color: #555;
+                    margin-bottom: 2rem;
+                }
+
+                .btn-secondary {
+                    background-color: #6c757d;
+                    color: #fff;
+                    border: none;
+                    padding: 0.75rem 1.5rem;
+                    border-radius: 0.5rem;
+                    font-weight: 600;
+                    transition: background-color 0.3s ease;
+                }
+
+                .btn-secondary:hover {
+                    background-color: #545b62;
+                }
+
+                .footer {
+                    background-color: #222;
+                    color: #ddd;
+                    padding: 50px 0;
+                }
+
+                .footer h5 {
+                    color: #fff;
+                    font-size: 1.2rem;
+                    margin-bottom: 20px;
+                }
+
+                .footer a {
+                    color: #ccc;
+                    text-decoration: none;
+                }
+
+                .footer a:hover {
+                    color: #e6c02b;
+                }
+
+                .footer .social-icons a {
+                    margin-right: 15px;
+                    font-size: 1.4rem;
+                    color: #e6c02b;
+                }
+
+                .footer-bottom {
+                    background-color: #111;
+                    padding: 15px;
+                    text-align: center;
+                    color: #aaa;
+                    font-size: 0.9rem;
+                }
+
+                .our-commitment {
+    background-color: #263238; /* Dark slate gray - a professional and calming dark color */
+    padding: 35rem 2rem; /* Slightly increased padding for better spacing */
+    color: #eceff1; /* Light gray - good contrast on dark backgrounds */
+}
+
+.our-commitment .container {
+    display: flex;
+    align-items: center; /* Vertical alignment */
+    justify-content: space-between; /* Space between text and image */
+    gap: 3rem; /* Increased gap for better separation */
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+    max-width: 1200px; /* Optional: Limit container width for better readability on large screens */
+    margin: 0 auto; /* Optional: Center the container */
+}
+
+.our-commitment .commitment-content {
+    display: flex;
+    width: 100%; /* Take full width on mobile */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.our-commitment .text-side {
+    flex: 1; /* Take up remaining space */
+    background-color: rgba(255, 255, 255, 0.05); /* Very subtle transparent white for text background */
+    padding: 2rem; /* Increased padding */
+    border-radius: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+}
+
+.our-commitment .text-side p {
+    font-size: 1.15rem; /* Slightly larger font size */
+    line-height: 1.8; /* Improved line height for readability */
+    color: #cfd8dc; /* Blue-gray - softer than pure white */
+}
+
+.our-commitment .image-side {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center the image */
+    align-items: center;
+}
+
+.our-commitment .image-side img {
+    max-width: 100%; /* Ensure image doesn't overflow */
+    height: auto;
+}
+
+/* Shape Styling (Example: Circle) */
+.shaped-image {
+  width: 450px;
+      height: 200px;
+      transform: skew(-10deg);
+      
+    border: 2px solid #455a64; /* Subtle border around the image */
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    .our-commitment .container {
+        flex-direction: column; /* Stack on smaller screens */
+        align-items: stretch; /* Full width for items */
+    }
+
+    .our-commitment .commitment-content {
+        flex-direction: column;
+    }
+
+    .our-commitment .text-side,
+    .our-commitment .image-side {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .shaped-image {
+        height: auto;
+        max-height: 300px; /* Limit height */
+        width: 80%; /* Take up more width */
+        border-radius: 8px; /* Less rounded on smaller screens */
+        margin: 20px auto; /* Center the image */
+    }
+}
+            </style>
+        </head>
+
+        <body>
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#">FixFlow.lk</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="aboutUs.php">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="services.php">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contactUs.php">Contact Us</a>
+                            </li>
+                        </ul>
+                        <a href="login.php" class="btn btn-primary ms-lg-3">Get Started</a>
+                    </div>
+                </div>
+            </nav>
+
+            <section class="hero-section">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 hero-content">
+                            <h1>Your Trusted Platform for Home Repairs & Services</h1>
+                            <p>FixFlow.lk connects you with reliable and skilled professionals for all your home repair needs.
+                                From plumbing to electrical, find the right expert for the job.</p>
+                            <a href="#" class="btn btn-primary btn-lg">Find a Service Now</a>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="carouselExampleAutoplay" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/login2.jpg"
+                                            class="d-block w-100 hero-image" alt="Home Repair 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/login3.jpg"
+                                            class="d-block w-100 hero-image" alt="Home Repair 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/login5.jpg"
+                                            class="d-block w-100 hero-image" alt="Home Repair 3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplay"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplay"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="why-choose-us py-5">
+                <div class="container">
+                    <h2 class="mb-4">Why Choose Us?</h2>
+                    <p class="lead">At FixFlow.lk, we are dedicated to providing you with a seamless and reliable experience for all your home repair needs.
+                    We connect you with a network of trusted professionals, ensuring quality service and peace of mind.</p>
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="feature-item">
+                                <i class="bi bi-tools" style="font-size: 2rem; color: #ffc107; margin-bottom: 1rem;"></i>
+                                <h3>Wide Range of Services</h3>
+                                <p>From plumbing and electrical to carpentry and appliance repair, find the service you need.</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="feature-item">
+                                 <i class="bi bi-person-check" style="font-size: 2rem; color: #ffc107; margin-bottom: 1rem;"></i>
+                                <h3>Trusted Professionals</h3>
+                                <p>Connect with verified and skilled service providers in your local area.</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="feature-item">
+                                 <i class="bi bi-calendar-check" style="font-size: 2rem; color: #ffc107; margin-bottom: 1rem;"></i>
+                                <h3>Easy Booking</h3>
+                                <p>Schedule appointments online at your convenience, saving you time and hassle.</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="feature-item">
+                                 <i class="bi bi-cash-coin" style="font-size: 2rem; color: #ffc107; margin-bottom: 1rem;"></i>
+                                <h3>Transparent Pricing</h3>
+                                <p>Get clear estimates and fair pricing for all services before you book.</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="feature-item">
+                                 <i class="bi bi-shield-check" style="font-size: 2rem; color: #ffc107; margin-bottom: 1rem;"></i>
+                                <h3>Quality Assurance</h3>
+                                <p>We ensure high-quality service delivery and customer satisfaction.</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="feature-item">
+                                 <i class="bi bi-lock-fill" style="font-size: 2rem; color: #ffc107; margin-bottom: 1rem;"></i>
+                                <h3>Secure Platform</h3>
+                                <p>Your data and transactions are secure with our advanced platform.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="our-commitment" style="background-color: #000; padding: 2rem; color: #fff;">
+              <div class="container">
+                  <div class="commitment-content">
+                      <div class="text-side">
+                          <p>
+                              We are committed to making your life easier. Finding reliable home service professionals shouldn't be a chore. We strive to provide a platform where you can easily connect with the right expert for your needs, knowing that they are vetted, skilled, and dedicated to providing excellent service. Your satisfaction is our top priority.
+                          </p>
+                      </div>
+                      <div class="image-side">
+                          <img src="images/login2.jpg" alt="Our Commitment" class="shaped-image">
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+             <section class="how-it-works-section py-5">
+                <div class="container">
+                    <h2 class="mb-4">How It Works</h2>
+                     <p class="lead">FixFlow.lk makes finding and booking home services easier than ever.  Here's how it works:</p>
+                    <div class="how-it-works-steps">
+                        <div class="how-it-works-step">
+                            <i class="bi bi-search" style="font-size: 3rem;"></i>
+                            <h3>Find a Service</h3>
+                            <p>Browse through our list of services and find the right professional for your needs.</p>
+                        </div>
+                        <div class="how-it-works-step">
+                            <i class="bi bi-calendar-check" style="font-size: 3rem;"></i>
+                            <h3>Book an Appointment</h3>
+                            <p>Select a convenient date and time and book your service online with ease.</p>
+                        </div>
+                        <div class="how-it-works-step">
+                            <i class="bi bi-tools" style="font-size: 3rem;"></i>
+                            <h3>Get Your Service Done</h3>
+                            <p>A skilled professional will arrive on schedule and complete the job efficiently.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services-section py-5">
+                <div class="container">
+                    <h2 class="mb-4">Our Services</h2>
+                     <p class="lead">We offer a wide array of home services to meet all your needs.  Here are some of our most popular services:</p>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <i class="bi bi-wrench" style="font-size: 2rem;"></i>
+                            <h3>General Repairs</h3>
+                            <p>Minor fixes, installations, and general maintenance around your home.</p>
+                        </div>
+                        <div class="service-card">
+                            <i class="bi bi-lightbulb-fill" style="font-size: 2rem;"></i>
+                            <h3>Electrical Services</h3>
+                            <p>Wiring, lighting, appliance repairs, and electrical installations.</p>
+                        </div>
+                         <div class="service-card">
+                            <i class="bi bi-droplet-fill" style="font-size: 2rem;"></i>
+                            <h3>Plumbing Services</h3>
+                            <p>Leak repairs, fixture installations, and all your plumbing needs.</p>
+                        </div>
+                         <div class="service-card">
+                            <i class="bi bi-hammer" style="font-size: 2rem;"></i>
+                            <h3>Carpentry Services</h3>
+                            <p>Furniture assembly, repairs, and custom woodwork.</p>
+                        </div>
+                         <div class="service-card">
+                            <i class="bi bi-house-fill" style="font-size: 2rem;"></i>
+                            <h3>Painting Services</h3>
+                            <p>Interior and exterior painting to refresh your home.</p>
+                        </div>
+                         <div class="service-card">
+                            <i class="bi bi-snow" style="font-size: 2rem;"></i>
+                            <h3>AC Repair and Maintenance</h3>
+                            <p>Keep your home cool with our AC services.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+           
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h5>About FixFlow.lk</h5>
+                            <p>FixFlow.lk is your one-stop platform to find trusted home repair professionals across Sri Lanka.</p>
+                        </div>
+                        <div class="col-md-2">
+                            <h5>Quick Links</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <h5>Contact</h5>
+                            <p>Email: support@fixflow.lk</p>
+                            <p>Phone: +94 77 123 4567</p>
+                            <p>Location: Colombo, Sri Lanka</p>
+                        </div>
+                        <div class="col-md-3">
+                            <h5>Follow Us</h5>
+                            <div class="social-icons">
+                                <a href="#"><i class="bi bi-facebook"></i> Facebook</a><br>
+                                <a href="#"><i class="bi bi-instagram"></i> Instagram</a><br>
+                                <a href="#"><i class="bi bi-twitter-x"></i> Twitter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom mt-4">
+                    &copy; 2025 FixFlow.lk | All rights reserved.
+                </div>
+            </footer>
+        </body>
+
+        </html>

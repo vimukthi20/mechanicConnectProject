@@ -1,0 +1,382 @@
+ body {
+                    font-family: sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background: url('https://via.placeholder.com/1600x900/f0f0f0/cccccc') no-repeat center center fixed; /* Replace with your image URL */
+                    background-size: cover;
+                    animation: none; /* Remove gradient animation */
+                }
+
+                .navbar {
+                    background-color: rgba(255, 255, 255, 0.9);
+                    padding: 1rem 2rem;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                }
+
+                .navbar-brand {
+                    color: #ffc107;
+                    font-weight: 900;
+                    font-size: 2rem;
+                }
+
+                .navbar-nav .nav-link {
+                    color: #555;
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    margin-left: 1rem;
+                    transition: color 0.3s ease;
+                }
+
+                .navbar-nav .nav-link:hover {
+                    color: #ffc107;
+                }
+
+                .btn-primary {
+                    background-color: #ffc107;
+                    color: #fff;
+                    border: none;
+                    padding: 0.75rem 1.5rem;
+                    border-radius: 0.5rem;
+                    font-weight: 600;
+                    transition: background-color 0.3s ease;
+                }
+
+                .btn-primary:hover {
+                    background-color: #e0a800;
+                }
+
+                .hero-section {
+                    background: linear-gradient(to right, #444, #222);
+                    color: white;
+                    padding: 5rem 2rem;
+                    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+                    margin-bottom: 2rem;
+                }
+
+                .hero-content h1 {
+                    font-size: 3.5rem;
+                    font-weight: 700;
+                    margin-bottom: 1.5rem;
+                }
+
+                .hero-content p {
+                    font-size: 1.2rem;
+                    line-height: 1.7;
+                    margin-bottom: 2rem;
+                }
+
+                .hero-image {
+                    border-radius: 0.5rem;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                }
+
+                .why-choose-us {
+                    padding: 3rem 2rem;
+                    text-align: center;
+                    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background */
+                    border-radius: 1rem;
+                    margin-bottom: 2rem;
+                }
+
+                .why-choose-us h2 {
+                    font-size: 2.5rem;
+                    font-weight: 700;
+                    color: #333;
+                    margin-bottom: 2rem;
+                }
+
+                .feature-item {
+                    padding: 1.5rem;
+                    margin-bottom: 1.5rem;
+                    border-radius: 0.5rem;
+                    background-color: #fff;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                    transition: transform 0.3s ease;
+                }
+
+                .feature-item:hover {
+                    transform: translateY(-5px);
+                }
+
+                .feature-item h3 {
+                    font-size: 1.5rem;
+                    color: #ffc107;
+                    margin-bottom: 0.5rem;
+                }
+
+                .feature-item p {
+                    color: #666;
+                }
+
+                /* New Section */
+                .our-commitment {
+                    padding: 2rem;
+                    text-align: center;
+                    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent */
+                    border-radius: 1rem;
+                    margin-bottom: 2rem;
+                }
+
+                .our-commitment p {
+                     font-size: 1.2rem;
+                    color: #444;
+                    line-height: 1.8;
+                }
+
+                .how-it-works-section {
+                    padding: 3rem 2rem;
+                    text-align: center;
+                    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background */
+                    border-radius: 1rem;
+                    margin-bottom: 2rem;
+                }
+
+                .how-it-works-section h2 {
+                    font-size: 2.5rem;
+                    font-weight: 700;
+                    color: #333;
+                    margin-bottom: 2rem;
+                }
+
+                .how-it-works-steps {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    gap: 2rem;
+                }
+
+                .how-it-works-step {
+                    flex: 1 1 300px;
+                    text-align: center;
+                    background-color: #fff;
+                    padding: 1.5rem;
+                    border-radius: 0.5rem;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    transition: transform 0.3s ease;
+                }
+
+                .how-it-works-step:hover {
+                    transform: translateY(-5px);
+                }
+
+                .how-it-works-step i {
+                    font-size: 3rem;
+                    color: #ffc107;
+                    margin-bottom: 1rem;
+                }
+
+                .how-it-works-step h3 {
+                    font-size: 1.5rem;
+                    color: #333;
+                    margin-bottom: 0.5rem;
+                }
+
+                .how-it-works-step p {
+                    color: #666;
+                }
+
+                .services-section {
+                     padding: 3rem 2rem;
+                    text-align: center;
+                    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background */
+                    border-radius: 1rem;
+                    margin-bottom: 2rem;
+                }
+
+                .services-section h2 {
+                    font-size: 2.5rem;
+                    font-weight: 700;
+                    color: #333;
+                    margin-bottom: 2rem;
+                }
+
+                .services-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                    gap: 2rem;
+                }
+
+                .service-card {
+                    background-color: #fff;
+                    padding: 1.5rem;
+                    border-radius: 0.5rem;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    transition: transform 0.3s ease;
+                }
+
+                .service-card:hover {
+                    transform: translateY(-5px);
+                }
+
+                .service-card i {
+                    font-size: 2rem;
+                    color: #ffc107;
+                    margin-bottom: 1rem;
+                }
+
+                .service-card h3 {
+                    font-size: 1.5rem;
+                    color: #333;
+                    margin-bottom: 0.5rem;
+                }
+
+                .service-card p {
+                    color: #666;
+                }
+
+                .contact-us {
+                    padding: 3rem 2rem;
+                    text-align: center;
+                    background-color: rgba(233, 236, 239, 0.8); /* Semi-transparent */
+                    border-radius: 1rem;
+                    margin-bottom: 2rem;
+                }
+
+                .contact-us h2 {
+                    font-size: 2.5rem;
+                    font-weight: 700;
+                    color: #333;
+                    margin-bottom: 2rem;
+                }
+
+                .contact-us p {
+                    font-size: 1.1rem;
+                    color: #555;
+                    margin-bottom: 2rem;
+                }
+
+                .btn-secondary {
+                    background-color: #6c757d;
+                    color: #fff;
+                    border: none;
+                    padding: 0.75rem 1.5rem;
+                    border-radius: 0.5rem;
+                    font-weight: 600;
+                    transition: background-color 0.3s ease;
+                }
+
+                .btn-secondary:hover {
+                    background-color: #545b62;
+                }
+
+                .footer {
+                    background-color: #222;
+                    color: #ddd;
+                    padding: 50px 0;
+                }
+
+                .footer h5 {
+                    color: #fff;
+                    font-size: 1.2rem;
+                    margin-bottom: 20px;
+                }
+
+                .footer a {
+                    color: #ccc;
+                    text-decoration: none;
+                }
+
+                .footer a:hover {
+                    color: #e6c02b;
+                }
+
+                .footer .social-icons a {
+                    margin-right: 15px;
+                    font-size: 1.4rem;
+                    color: #e6c02b;
+                }
+
+                .footer-bottom {
+                    background-color: #111;
+                    padding: 15px;
+                    text-align: center;
+                    color: #aaa;
+                    font-size: 0.9rem;
+                }
+
+                .our-commitment {
+    background-color: #263238; /* Dark slate gray - a professional and calming dark color */
+    padding: 35rem 2rem; /* Slightly increased padding for better spacing */
+    color: #eceff1; /* Light gray - good contrast on dark backgrounds */
+}
+
+.our-commitment .container {
+    display: flex;
+    align-items: center; /* Vertical alignment */
+    justify-content: space-between; /* Space between text and image */
+    gap: 3rem; /* Increased gap for better separation */
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+    max-width: 1200px; /* Optional: Limit container width for better readability on large screens */
+    margin: 0 auto; /* Optional: Center the container */
+}
+
+.our-commitment .commitment-content {
+    display: flex;
+    width: 100%; /* Take full width on mobile */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.our-commitment .text-side {
+    flex: 1; /* Take up remaining space */
+    background-color: rgba(255, 255, 255, 0.05); /* Very subtle transparent white for text background */
+    padding: 2rem; /* Increased padding */
+    border-radius: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+}
+
+.our-commitment .text-side p {
+    font-size: 1.15rem; /* Slightly larger font size */
+    line-height: 1.8; /* Improved line height for readability */
+    color: #cfd8dc; /* Blue-gray - softer than pure white */
+}
+
+.our-commitment .image-side {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center the image */
+    align-items: center;
+}
+
+.our-commitment .image-side img {
+    max-width: 100%; /* Ensure image doesn't overflow */
+    height: auto;
+}
+
+/* Shape Styling (Example: Circle) */
+.shaped-image {
+  width: 450px;
+      height: 200px;
+      transform: skew(-10deg);
+      
+    border: 2px solid #455a64; /* Subtle border around the image */
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    .our-commitment .container {
+        flex-direction: column; /* Stack on smaller screens */
+        align-items: stretch; /* Full width for items */
+    }
+
+    .our-commitment .commitment-content {
+        flex-direction: column;
+    }
+
+    .our-commitment .text-side,
+    .our-commitment .image-side {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .shaped-image {
+        height: auto;
+        max-height: 300px; /* Limit height */
+        width: 80%; /* Take up more width */
+        border-radius: 8px; /* Less rounded on smaller screens */
+        margin: 20px auto; /* Center the image */
+    }
+}

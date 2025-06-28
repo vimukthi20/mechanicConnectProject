@@ -1,0 +1,17 @@
+.card-icon {
+  font-size: 30px;
+  color: #007bff;
+}
+.recommended img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.dashboard-welcome {
+  background: url('../images/login5.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+}
